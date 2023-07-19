@@ -15,9 +15,10 @@ Most objectives of this project were achieved however there is lots of room for 
 3. Dark theme only
 4. Show charger/battery % when hover over power button.
 5. Many changes expected because idea still incomplete. Might be handed over to an expert to get completed. This is only a mock design.
-<br><ins>Technology</ins><br>
 
+<br><ins>Technology</ins><br>
 Project got completed  with HTML, CSS & JavaScript.<br>
+
 <ins>Note</ins><br>
 Make sure there is internet connection when opening downloaded files on a browser. Project contains CDN links to show correct layout.
 
