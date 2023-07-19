@@ -20,5 +20,6 @@ Most objectives of this project were achieved however there is lots of room for 
 Project got completed  with HTML, CSS & JavaScript.<br>
 
 <ins>Note</ins><br>
-Make sure there is internet connection when opening downloaded files on a browser. Project contains CDN links to show correct layout.
+1. Make sure there is internet connection when opening downloaded files on a browser. Project contains CDN links to show correct layout.
+2. Designed for touch & devices with a mouse. Back & Next buttons at the bottom on the right of screen.
 
