@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="font-family: Calibri">
+
+  <meta charset="utf-8">
+  <title>Camera.</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <link href="img/icon.png" rel="icon">
+  <link href="img/icon.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body style="font-family: Calibri" id="site_background">
+
+
+  <header class="header_area">
+
+  </header>
+
+
+
+
+  <main class="px-2 ">
+    <section id="contact"  >
+      <div class="container ">
+        <div class="">
+          <h1 class=" my-5 text-center text-light"> <b>Camera.</b>
+          </h1>
+
+
+        </div>
+		
+        <div class="row">
+
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div class="info ">
+              <div>
+          
+                
+                ><video id="video"  height="350" width="450" autoplay></video>
+                <a href="#" class="btn btn-block btn-dark rounded-0 mb-0 " role="button" id="startBtn" onclick="openCam()" style="font-family: Calibri">Capture</a><br>
+                
+               
+                
+                
+                <br>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+         
+        </div>
+
+    </section>
+
+   
+
+  </main>
+
+
+  <footer id="footer" >
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3 text-lg-left text-center pb-2">
+          <div class="copyright text-light" style="font-family: Calibri">
+            
+          </div>
+
+          <div class="">
+          </div>
+
+        </div>
+
+        <div class="col-md-6 text-lg-left text-center pb-2">
+          <div class="copyright text-light text-center" style="font-family: Calibri">
+            
+            <!-- Bottom links -->
+            <a href="# " onclick="show('editPopup')" role="button" class="pr-3">Edit</a>  <a href="#" onclick="show('networkPopup')" role="button"class="">Network 90%</a>  <a href="#" onclick="show('timePopup')" role="button" class="pl-3">6:00 am </a>   <a href="#" onclick="show('datePopup')" role="button"class="pl-3">18 July</a>      <a href="#" onclick="show('searchPopup')" role="button" class="pl-3">Search</a>  <a href="index.html" class="pl-3">Back |</a> <a href="#" class="">Next</a> <br>    <br>
+         
+            <!-- edit button -->
+            <div class="editPopup px-3 text-center" id="editPopup">
+              <a href="#" id="buttonText" class="pt-5">No preview. Tap button to go to home screen.</a> <br><br>
+              <a href="index.html" class="btn btn-block btn-dark rounded-0" id="buttonBorder" role="button" style="font-family: Calibri">Home screen</a>
+            <br>
+
+            <!-- edit cancel link -->
+              <a href="#" id="buttonText" onclick="hide('editPopup')">Cancel</a>
+            </div>
+
+             <!-- Network button -->
+             <div class="networkPopup px-3 text-center" id="networkPopup">
+              <a href="#" class="pt-5" id="buttonText">Connection signal 90%. Tap button for details.</a> <br><br>
+              <a href="network.html" class="btn btn-block btn-dark rounded-0" id="buttonBorder" role="button" style="font-family: Calibri">Network</a>
+            <br>
+
+            <!-- Network cancel link -->
+              <a href="#" id="buttonText" onclick="hide('networkPopup')">Cancel</a>
+            </div>
+
+             <!-- Time button -->
+             <div class="timePopup px-3 text-center" id="timePopup">
+              <a href="#" class="pt-5" id="buttonText">Tap button to change time.</a> <br><br>
+              <a href="change_time.html" class="btn btn-block btn-dark rounded-0" id="buttonBorder" role="button" style="font-family: Calibri">Change time</a>
+            <br>
+
+            <!-- Time cancel link -->
+              <a href="#" id="buttonText" onclick="hide('timePopup')">Cancel</a>
+            </div>
+
+             <!-- Date button -->
+             <div class="datePopup px-3 text-center" id="datePopup">
+              <a href="#" class="pt-5" id="buttonText">Tap button to change date.</a> <br><br>
+              <a href="change_date.html" class="btn btn-block btn-dark rounded-0" id="buttonBorder" role="button" style="font-family: Calibri">Change date</a>
+            <br>
+
+            <!-- Date cancel link -->
+              <a href="#" id="buttonText" onclick="hide('datePopup')">Cancel</a>
+            </div>
+
+
+          </div>
+
+          <div class="">
+          </div>
+
+        </div>
+
+        <div class="col-md-3 text-lg-left text-center pb-2">
+          <div class="copyright text-light" style="font-family: Calibri">
+           
+          </div>
+
+          <div class="">
+          </div>
+
+        </div>
+
+        
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- . Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
