@@ -14,7 +14,7 @@ Most objectives of this project were achieved however there is lots of room for 
 2. When a function is switched on outline & text becomes white.
 3. Dark theme only
 4. Show charger/battery % when hover over power button.
-5. Many changes expected because idea still incomplete. Might be handed over to an expert to get completed. This is only a mock design.
+5. Many changes expected because idea still incomplete. Might be handed over to an expert to get completed. Only completed a mock design.
 
 <br><ins>Technology</ins><br>
 Project got completed  with HTML, CSS & JavaScript.<br>
